@@ -6,7 +6,7 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="<?php echo base_url();?>/assets/images/users/<?php echo $get_current_user_details->photo;?>" class="img-circle" alt="User Image" style="width: 45px;height: 45px;">
+          <img src="<?php echo base_url();?>/assets/images/users/<?php echo $get_current_user_details->photo;?>" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p> <?php echo $get_current_user_details->name;?></p>

@@ -24,7 +24,7 @@
                   <th>Salary</th>
                   <th>Status</th>
                 </tr>
-                <?php if(count($logs)): foreach($logs as $log):?>
+                <?php if(isset($logs)): foreach($logs as $log):?>
                   <tr>
                   <td><?php echo date('M d Y' , strtotime($log->date));?></td>
                   <td><?php $details = $this->M_User->get_employee_details($log->employee_id); echo $details->name;?></td>

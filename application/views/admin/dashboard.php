@@ -16,13 +16,12 @@
       <div class="row">
         <!-- Left col -->
         <section class="col-lg-12">
-          <div class="box box-solid">
+          <!-- <div class="box box-solid">
             <div class="box-header with-border">
               <div class="callout callout-info" style="margin-bottom: 0;">
                 <h4>HR Policies</h4>
               </div>
             </div>
-            <!-- /.box-header -->
             <div class="box-body">
               <blockquote>
                 <img src="<?php echo base_url();?>assets/images/logo/business.jpeg" style="" class="business-image">
@@ -47,8 +46,7 @@
 
               </blockquote>
             </div>
-            <!-- /.box-body -->
-          </div>
+          </div> -->
           <div class="box box-solid">
             <div class="box-header with-border">
               <div class="callout callout-info" style="margin-bottom: 0;">
@@ -58,7 +56,7 @@
             <!-- /.box-header -->
             <div class="box-body">
               <blockquote>
-                <p>A leading laundry shop that provide customer with the best quality serviice.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis maiores, quasi molestiae possimus dolorem eos explicabo quaerat excepturi ab consequatur, provident obcaecati eveniet in quibusdam aliquam id mollitia sit? Quam.</p>
               </blockquote>
             </div>
             <!-- /.box-body -->
@@ -72,7 +70,7 @@
             <!-- /.box-header -->
             <div class="box-body">
               <blockquote>
-                <p>To lead the industry by introducing our quality service that will exceed customer's satisfactions.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis maiores, quasi molestiae possimus dolorem eos explicabo quaerat excepturi ab consequatur, provident obcaecati eveniet in quibusdam aliquam id mollitia sit? Quam.</p>
               </blockquote>
             </div>
             <!-- /.box-body -->

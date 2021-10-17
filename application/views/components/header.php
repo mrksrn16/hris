@@ -2,8 +2,8 @@
 <html>
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>HRIS</title>
-  <link rel="icon" type="image/jpg" href="<?php echo base_url();?>assets/images/logo/favicon.png" />
+  <title>MES</title>
+  <!-- <link rel="icon" type="image/jpg" href="<?php echo base_url();?>assets/images/logo/favicon.png" /> -->
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -29,16 +29,16 @@
    </style>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
-<div id="preloader"><span><img src="<?php echo base_url();?>assets/images/logo/logo.jpg" class="logo-img"><img src="<?php echo base_url();?>assets/images/loader.gif" class="loader"></span></div>
+<div id="preloader"><span><img src="<?php echo base_url();?>assets/images/loader.gif" class="loader"></span></div>
 <div class="wrapper">
   <header class="main-header">
     <div class="header-content">
-     <div class="logo-center">
-       <img src="<?php echo base_url();?>assets/images/logo/logo.jpg">
-     </div>
+     <!-- <div class="logo-center">
+       <img src="<?php echo base_url();?>assets/images/logo/logo.png">
+     </div> -->
      <div class="site-title">
-       <div class="site-name">LC BRAND</div>
-       <div class="site-caption">This is a sample caption</div>
+       <div class="site-name">MES</div>
+       <!-- <div class="site-caption">This is a sample caption</div> -->
      </div>
     </div>
       <div class="navbar-custom-menu">

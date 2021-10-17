@@ -26,7 +26,7 @@
                   <th>Tax</th>
                   <th></th>
                 </tr>
-                <?php if(count($benefits)): foreach($benefits as $benefit):?>
+                <?php if(isset($benefits)): foreach($benefits as $benefit):?>
                 	<tr>
                 		<td><?php echo ucfirst($benefit->position);?></td>
                 		<td><?php echo $benefit->sss;?></td>
@@ -156,7 +156,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
-        LC Brand
+        MES
       </div>
     </div>
   </div>

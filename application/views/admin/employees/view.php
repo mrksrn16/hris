@@ -101,7 +101,7 @@
                         <th>Time out</th>
                         <th></th>
                       </tr>
-                      <?php if(count($attendance)): foreach($attendance as $myAttendance):?>
+                      <?php if(isset($attendance)): foreach($attendance as $myAttendance):?>
                       <tr value="<?php echo $myAttendance->id;?>">
                         <td><?php echo date('M-d-Y', strtotime($myAttendance->date));?></td>
                         <td><?php echo date('h:i', strtotime($myAttendance->time_in));?></td>
@@ -150,7 +150,7 @@
                         <th>Notes</th>
                         <th></th>
                       </tr>
-                      <?php if(count($leave)): foreach($leave as $myLeave):?>
+                      <?php if(isset($leave)): foreach($leave as $myLeave):?>
                       <tr>
                         <td><?php echo date('M-d-Y', strtotime($myLeave->date));?></td>
                         <td><?php echo $myLeave->notes;?></td>
@@ -229,7 +229,7 @@
                         <th>Notes</th>
                         <th></th>
                       </tr>
-                      <?php if(count($bonus)): foreach($bonus as $myBonus):?>
+                      <?php if(isset($bonus)): foreach($bonus as $myBonus):?>
                       <tr>
                         <td><?php echo date('M-d-Y', strtotime($myBonus->date));?></td>
                         <td><?php echo $myBonus->amount;?></td>
@@ -416,7 +416,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
-        LC Brand
+        MES
       </div>
     </div>
   </div>
@@ -464,7 +464,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
-        LC Brand
+        MES
       </div>
     </div>
   </div>
@@ -505,7 +505,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
-        LC Brand
+        MES
       </div>
     </div>
   </div>
@@ -548,7 +548,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
-        LC Brand
+        MES
       </div>
     </div>
   </div>
@@ -588,7 +588,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
-        LC Brand
+        MES
       </div>
     </div>
   </div>
@@ -631,7 +631,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
-        LC Brand
+        MES
       </div>
     </div>
   </div>

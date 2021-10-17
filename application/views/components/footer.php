@@ -2,7 +2,7 @@
     <div class="pull-right hidden-xs">
       <b>Powered by:</b> AdminLTE
     </div>
-    <strong>Copyright &copy; <?php echo date('Y');?> <a href="#">LC Brand</a>.</strong> All rights
+    <strong>Copyright &copy; <?php echo date('Y');?> <a href="#">MES</a>.</strong> All rights
     reserved.
   </footer>
   <div class="control-sidebar-bg"></div>

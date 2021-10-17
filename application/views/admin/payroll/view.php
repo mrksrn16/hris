@@ -60,7 +60,7 @@
                   <div class="box-body table-responsive no-padding">
                     <table class="table table-hover">
                       <tbody>
-                        <div class="col-sm-12" align="center" style="position: relative;"><h2>LC BRAND PARTNERSHIP</h2>
+                        <div class="col-sm-12" align="center" style="position: relative;"><h2>MES PARTNERSHIP</h2>
                         <button class="btn btn-warning" style="position: absolute;right: 10px;top: 5px;" onclick="printDiv('printableArea')" id="btnPrint">Print</button>
                         <p style="margin:0">Some captions here</p>
                         <p>For the day of <b><em><?php echo date('M d', strtotime($start_date));?></em></b> to <em><b><?php echo date('M d Y', strtotime($end_date));?></b></em></p>
@@ -164,7 +164,7 @@
                         <th></th>
                         <th></th>
                       </tr>
-                      <?php if(count($attendance)): foreach($attendance as $myAttendance):?>
+                      <?php if(isset($attendance)): foreach($attendance as $myAttendance):?>
                       <tr value="<?php echo $myAttendance->id;?>">
                         <td><?php echo date('M-d-Y', strtotime($myAttendance->date));?></td>
                         <td><?php echo date('h:i', strtotime($myAttendance->time_in));?></td>
@@ -223,7 +223,7 @@
                         <th>Number of Hours</th>
                         <th>Pay</th>
                       </tr>
-                      <?php if(count($overtime)): foreach($overtime as $myOvertime):?>
+                      <?php if(isset($overtime)): foreach($overtime as $myOvertime):?>
                       <tr value="<?php echo $myOvertime->id;?>">
                         <td><?php echo date('M-d-Y', strtotime($myOvertime->date));?></td>
                         <td><?php echo $myOvertime->number_of_hours;?></td>
@@ -241,7 +241,7 @@
                   </div>
                   <!-- /.box-body -->
                 </div>
-                <?php if(count($overtime)):?>
+                <?php if(isset($overtime)):?>
                 <p>Number of Hours: <span><b><?php echo $count_all_over_time;?></b></span></p>
                 <p>Employee rate: <span><b>100</b></span></p>
                 <p>Pay: <span><b><?php echo $total_overtime_pay;?></b></span></p>
@@ -268,7 +268,7 @@
                         <th>Notes</th>
                         <th></th>
                       </tr>
-                      <?php if(count($leave)): foreach($leave as $myLeave):?>
+                      <?php if(isset($leave)): foreach($leave as $myLeave):?>
                       <tr value="<?php echo $myLeave->id;?>">
                         <td><?php echo date('M-d-Y', strtotime($myLeave->date));?></td>
                         <td><?php echo $myLeave->notes;?></td>
@@ -308,7 +308,7 @@
                         <th>Name</th>
                         <th></th>
                       </tr>
-                      <?php if(count($holidays)): foreach($holidays as $holiday):?>
+                      <?php if(isset($holidays)): foreach($holidays as $holiday):?>
                       <tr>
                         <td><?php echo date('M-d-Y', strtotime($holiday->date));?></td>
                         <td><?php echo $holiday->name;?></td>
@@ -385,7 +385,7 @@
                         <th>Notes</th>
                         <th></th>
                       </tr>
-                      <?php if(count($bonus)): foreach($bonus as $myBonus):?>
+                      <?php if(isset($bonus)): foreach($bonus as $myBonus):?>
                       <tr>
                         <td><?php echo date('M-d-Y', strtotime($myBonus->date));?></td>
                         <td><?php echo $myBonus->amount;?></td>
@@ -419,7 +419,7 @@
     <!-- /.content -->
 </div>
 <div id="printableArea" style="display: none;">
-        <div class="col-sm-12" align="center" style="position: relative;"><h2>LC BRAND PARTNERSHIP</h2>
+        <div class="col-sm-12" align="center" style="position: relative;"><h2>MES PARTNERSHIP</h2>
         <p>For the day of <b><em><?php echo date('M d', strtotime($start_date));?></em></b> to <em><b><?php echo date('M d Y', strtotime($end_date));?></b></em></p>
         </div>
         <div class="col-sm-12">
@@ -566,7 +566,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
-        LC Brand
+        MES
       </div>
     </div>
   </div>

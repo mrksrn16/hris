@@ -1,8 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-function __autoload($classname)
-{
-	if(strpos($classname, 'CI_') !== 0)
+spl_autoload_register(function($classname) {
+    if(strpos($classname, 'CI_') !== 0)
 	{
 		$file = APPPATH. 'libraries/' . $classname . '.php';
 		if(file_exists($file) && is_file($file))
@@ -10,7 +9,7 @@ function __autoload($classname)
 			@include_once($file);
 		}
 	}
-}
+});
 date_default_timezone_set('Asia/Manila');
 /*
 |--------------------------------------------------------------------------
@@ -34,7 +33,7 @@ date_default_timezone_set('Asia/Manila');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost:8000/hris/';
+$config['base_url'] = 'http://hris.meserns.com/';
 
 /*
 |--------------------------------------------------------------------------

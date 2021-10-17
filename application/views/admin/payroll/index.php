@@ -41,7 +41,7 @@
                   <th>Name</th>
                   <th>Action</th>
                 </tr>
-                <?php if(count($employees)): foreach($employees as $employee):?>
+                <?php if(isset($employees)): foreach($employees as $employee):?>
                   <tr>
                   <td><?php echo $employee->user_id;?></td>
                   <td><?php echo $employee->name;?></td>

@@ -30,8 +30,8 @@
 	}
 </style>
 <header>
-	<img src="<?php echo base_url();?>assets/images/logo/logo.jpg" class="logo"><br/>
-	<span class="company-name">Lc Brand</span><br/>
+	<img src="<?php echo base_url();?>assets/images/logo/logo.png" class="logo"><br/>
+	<span class="company-name">MES</span><br/>
 	<span class="company-address">Valenzuela City</span>
 </header>
 <h3>List of Employees</h3>

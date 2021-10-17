@@ -22,7 +22,7 @@
                   <th>Rate</th>
                   <th></th>
                 </tr>
-                <?php if(count($rate)): foreach($rate as $empRate):?>
+                <?php if(isset($rate)): foreach($rate as $empRate):?>
                 	<tr>
                 		<td><?php echo ucfirst($empRate->position);?></td>
                 		<td><?php echo $empRate->rate;?></td>
@@ -114,7 +114,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
-        LC Brand
+        MES
       </div>
     </div>
   </div>

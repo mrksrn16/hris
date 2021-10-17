@@ -43,7 +43,7 @@
                   <th>Contact</th>
                   <th>Action</th>
                 </tr>
-                <?php if(count($employees)): foreach($employees as $employee):?>
+                <?php if(isset($employees)): foreach($employees as $employee):?>
                   <tr>
                   <td><?php echo $employee->name;?></td>
                   <td><?php echo ucfirst($employee->position);?></td>
@@ -208,7 +208,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
-        LC BRAND
+        MES
       </div>
     </div>
   </div>

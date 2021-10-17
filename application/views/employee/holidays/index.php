@@ -28,7 +28,7 @@
                   <th>Name</th>
                   <th>Date</th>
                 </tr>
-                <?php if(count($holidays)): foreach($holidays as $holiday):?>
+                <?php if(isset($holidays)): foreach($holidays as $holiday):?>
                   <tr>
                   <td><?php echo $holiday->name;?></td>
                   <td><?php echo date('M d Y', strtotime($holiday->date));?></td>

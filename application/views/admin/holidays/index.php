@@ -29,7 +29,7 @@
                   <th>Date</th>
                   <th>Action</th>
                 </tr>
-                <?php if(count($holidays)): foreach($holidays as $holiday):?>
+                <?php if(isset($holidays)): foreach($holidays as $holiday):?>
                   <tr>
                   <td><?php echo $holiday->name;?></td>
                   <td><?php echo date('M d Y', strtotime($holiday->date));?></td>
@@ -106,7 +106,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
-        LC BRAND
+        MES
       </div>
     </div>
   </div>

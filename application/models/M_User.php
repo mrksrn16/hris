@@ -33,7 +33,7 @@ class M_User extends MY_Model
 				'username' => $this->input->post('username'),
 				'password' => $this->hash($this->input->post('password'))
 				), TRUE);
-			if(count($user))
+			if(isset($user))
 			{
 				$data = array(
 					'username' => $user->username,
@@ -56,7 +56,7 @@ class M_User extends MY_Model
 				'username' => $this->input->post('username'),
 				'password' => $this->hash($this->input->post('password'))
 				), TRUE);
-			if(count($user))
+			if(isset($user))
 			{
 				$role = $user->role;
 				if($role == 'admin'){

@@ -14,9 +14,10 @@
     float: left;
 }
 .header-content {
-    width: 50%;
+    /* width: 50%;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; */
+    padding: 0 10px;
 }
 .site-title {
     padding-top: 20px;
