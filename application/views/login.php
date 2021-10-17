@@ -10,7 +10,7 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="<?php echo base_url();?>assets/font-awesome/css/font-awesome.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="<?php echo base_url();?>assets/adminLTE/css/adminLTE.min.css">
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/adminLTE/css/AdminLTE.min.css">
   <link rel="stylesheet" href="<?php echo base_url();?>assets/adminLTE/css/skins/_all-skins.min.css">
 
   <!-- Google Font -->
@@ -54,7 +54,7 @@
 <!-- Bootstrap 3.3.7 -->
 <script src="<?php echo base_url();?>assets/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- adminLTE App -->
-<script src="<?php echo base_url();?>assets/adminLTE/js/adminLTE.min.js"></script>
+<script src="<?php echo base_url();?>assets/adminLTE/js/adminlte.min.js"></script>
 
 <script type="text/javascript">
 $(document).ready(function(){
