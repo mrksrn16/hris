@@ -11,7 +11,7 @@
 <!-- Bootstrap 3.3.7 -->
 <script src="<?php echo base_url();?>assets/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- adminLTE App -->
-<script src="<?php echo base_url();?>assets/adminLTE/js/adminLTE.min.js"></script>
+<script src="<?php echo base_url();?>assets/adminLTE/js/adminlte.min.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
 		$('#preloader').fadeOut();

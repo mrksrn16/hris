@@ -11,7 +11,7 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="<?php echo base_url();?>assets/font-awesome/css/font-awesome.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="<?php echo base_url();?>assets/adminLTE/css/adminLTE.min.css">
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/adminLTE/css/AdminLTE.min.css">
   <link rel="stylesheet" href="<?php echo base_url();?>assets/adminLTE/css/skins/_all-skins.min.css">
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
