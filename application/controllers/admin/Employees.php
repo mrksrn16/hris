@@ -208,7 +208,7 @@ class Employees extends User_Controller
 		$where = "date='$input_date' AND 'employee_id'='$employee_id'";
 		$this->db->where($where);
 		$result = $this->db->get('tbl_attendance')->row();
-		if(isset($result) == 0){
+		// if(isset($result) && count($result) != 0){
 			$data = array(
 					'employee_id' => $id,
 					'time_in' => $this->input->post('time_in'),
@@ -218,10 +218,11 @@ class Employees extends User_Controller
 
 			$this->db->insert('tbl_attendance', $data);
 			redirect('admin/employees/view/'.$id);
-		}else{
-			echo "<script>alert('Date entry already exists, you may edit it on the list below.');</script>";
-			redirect('admin/employees/view/'.$id);
-		}
+		// }
+		// else{
+		// 	echo "<script>alert('Date entry already exists, you may edit it on the list below.');</script>";
+		// 	redirect('admin/employees/view/'.$id);
+		// }
 	}
 	public function update_attendance($emp_id){
 		date_default_timezone_set('Asia/Manila');

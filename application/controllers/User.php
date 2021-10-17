@@ -13,20 +13,20 @@ class User extends User_Controller
 			{
 				//Add time in
 				if($this->session->userdata('id')){
-					$today = date('Y-m-d');
-					$employee_id = $this->session->userdata('id');
-					$where = "employee_id='$employee_id' AND date='$today'";
-					$this->db->where($where);
-					$query = $this->db->get('tbl_attendance');
-					// var_dump($query->num_rows());
-					if($query->num_rows() == 0){	
-						$data = array(
-							'employee_id' => $this->session->userdata('id'),
-							'time_in' => date('Y-m-d h:i'),
-							'date' => date('Y-m-d')
-							);
-						$this->db->insert('tbl_attendance', $data);
-					}
+					// $today = date('Y-m-d');
+					// $employee_id = $this->session->userdata('id');
+					// $where = "employee_id='$employee_id' AND date='$today'";
+					// $this->db->where($where);
+					// $query = $this->db->get('tbl_attendance');
+					// // var_dump($query->num_rows());
+					// if($query->num_rows() == 0){	
+					// 	$data = array(
+					// 		'employee_id' => $this->session->userdata('id'),
+					// 		'time_in' => date('Y-m-d h:i'),
+					// 		'date' => date('Y-m-d')
+					// 		);
+					// 	$this->db->insert('tbl_attendance', $data);
+					// }
 				}
 				if($this->session->userdata('role') == 'admin'){
 					redirect('admin/dashboard');
