@@ -208,17 +208,18 @@ class Employees extends User_Controller
 		$where = "date='$input_date' AND 'employee_id'='$employee_id'";
 		$this->db->where($where);
 		$result = $this->db->get('tbl_attendance')->row();
-		if($result != NULL){
+		if(isset($result) == 0){
 			$data = array(
 					'employee_id' => $id,
 					'time_in' => $this->input->post('time_in'),
 					'time_out' => $this->input->post('time_out'),
 					'date' => $this->input->post('date')
 				);
+
 			$this->db->insert('tbl_attendance', $data);
 			redirect('admin/employees/view/'.$id);
 		}else{
-			echo "<script>alert('Input date already exists.');</script>";
+			echo "<script>alert('Date entry already exists, you may edit it on the list below.');</script>";
 			redirect('admin/employees/view/'.$id);
 		}
 	}
